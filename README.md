@@ -9,28 +9,25 @@ Add Mandrill Api key to your config file. Usually `app/config/application.php`
 'mandrill_api_key' => 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 ```
 
-Add the Tartan folder into your `app/libraries` or `app/vendor` directory.
-
-Register Tartan namespace in your application bootstrap. Usually `public/index.php`
-
+Install via composer
 ```php
-    $loader = new Phalcon\Loader();
-    $loader->registerNamespaces(array(
-        // Libraries
-        'Tartan'      => __DIR__ . '/library/Tartan', // or /vendor/Tartan
-        // Modules
-        'Site'    => __DIR__ . '/modules/Site',
-        'Backend' => __DIR__ . '/modules/Backend',
-    ));
-    $loader->register();
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mizterp/PhalconPhpMandrill"
+    }
+  ],
+  "require": {
+    "mizterp/phalcon-php-mandrill": "master"
+  }
 ```
 
-And add Mandrill to your app DI
+Add Mandrill to your app DI
 
 ```php
     $config = include __DIR__ . '/config/application.php';
     /**
-     * Mail service uses AmazonSES
+     * Mail service
      */
     $di->set('mandrill', function() use ($config) {
         return new Tartan\Mandrill($config->mandrill_api_key);
