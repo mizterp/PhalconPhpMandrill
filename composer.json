@@ -14,7 +14,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Tartan\\Mandrill\\": "libraries/" }
+        "psr-4": { "Tartan\\": "libraries/" }
     },
     "extra": {
         "branch-alias": {
