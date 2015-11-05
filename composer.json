@@ -1,0 +1,17 @@
+{
+    "name": "mizterp/phalcon-php-mandrill",
+    "type": "library",
+    "description": "A PhalconPhp component for using Mandrill API",
+    "keywords": ["phalcon","mandrill","mail","mailer", "tartan", "php-mailer"],
+    "homepage": "https://bitbucket.org/tartan/phalconphp-mandrill/",
+    "require": {
+        "php": ">=5.4"
+    },
+    "authors": [
+        {
+            "name": "Aboozar Ghafari",
+            "email": "a6oozar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
