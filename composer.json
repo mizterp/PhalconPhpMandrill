@@ -13,5 +13,13 @@
             "email": "a6oozar@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": { "Tartan\\Mandrill\\": "libraries/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "master": "1.0.0"
+        }
+    },
     "minimum-stability": "dev"
 }
