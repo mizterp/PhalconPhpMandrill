@@ -23,7 +23,6 @@ Install via composer
 ```
 
 Add Mandrill to your app DI
-
 ```php
     $config = include __DIR__ . '/config/application.php';
     /**
@@ -37,7 +36,6 @@ Add Mandrill to your app DI
 
 # Usage (in controller)
 ```php
-
     //In some controller, far far away
 
     //Prepare email!
